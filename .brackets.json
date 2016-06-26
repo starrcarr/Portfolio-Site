@@ -1,17 +1,15 @@
 {
-  "path": {
-    "scss/*.scss": {
-      "sass.enabled": true,
-      "sass.options": {
-          "outputDir": "../css/",
-      "includePaths": [
-                    "scss",
-                ],
-        
-        "imagePath": null,
-        "sourceComments": "map",
-        "outputStyle": "compressed"
-      }
+    "sass.enabled": false,
+    "path": {
+        "scss/main.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": ["partials/"],
+                "imagePath": null,
+                "sourceComments": "none",
+                "outputStyle": "nested"
+            }
+        }
     }
-  }
 }
