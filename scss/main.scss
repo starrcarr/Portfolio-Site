@@ -8,14 +8,24 @@ body {
     background: $primary-color;
     border: solid 2px #ccc;
 }
- path {
-    fill-opacity: 0;
-    stroke: #fff;
-    stroke-width: 3;
-    stroke-dasharray: 870;
-    stroke-dashoffset: 870;
-    animation: draw 10s infinite linear;
-  }
+svg {
+    max-width: 95%;
+    max-height: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+    path {
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-width: 3;
+        stroke-dasharray: 870;
+        stroke-dashoffset: 870;
+        animation: draw 10s infinite linear;
+      }
 }
 
 @keyframes draw {
