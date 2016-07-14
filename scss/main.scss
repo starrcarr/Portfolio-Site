@@ -6,13 +6,11 @@
 }
 body {
     background: $primary-color;
-    border: solid 2px #ccc;
 }
 svg {
     max-width: 95%;
     max-height: 95%;
     position: absolute;
-    fill: url(#lgrad);
     top: 0;
     left: 0;
     right: 0;
@@ -20,26 +18,17 @@ svg {
     margin: auto;
     
     path {
-        fill-opacity: 0;
-        stroke: #fff;
-        stroke-width: 3;
-        stroke-dasharray: 870;
-        stroke-dashoffset: 870;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-        animation-iteration: 1;
-        animation-name: draw, FillIn;
-        animation-duration: 8s, 1s;
-        animation-delay: 0, 7.5s;
-      }
+    fill-opacity: 0;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-dasharray: 870;
+    stroke-dashoffset: 870;
+    animation: draw 10s infinite linear;
+  }
 }
 
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
   }
-}
-@keyframes FillIn {
-  from { fill-opacity: 0; }
-  to { fill-opacity: 1; }
 }
