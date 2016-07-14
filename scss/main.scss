@@ -18,13 +18,20 @@ svg {
     margin: auto;
     
     path {
-    fill-opacity: 0;
-    stroke: #000;
-    stroke-width: 3;
-    stroke-dasharray: 870;
-    stroke-dashoffset: 870;
-    animation: draw 10s infinite linear;
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-width: 3;
+        stroke-dasharray: 970;
+        stroke-dashoffset: 970;
+        animation: draw 10s infinite linear;
   }
+    .Logo-Bkg {
+        fill: url(#lgrad);
+        fill-opacity: 1;
+        path {
+            fill-opacity: 1;
+        }
+    }
 }
 
 @keyframes draw {
