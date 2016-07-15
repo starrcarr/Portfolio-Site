@@ -8,8 +8,8 @@ body {
     background: $primary-color;
 }
 svg {
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 100%;
+    max-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -18,24 +18,25 @@ svg {
     margin: auto;
     
     path {
-        fill-opacity: 0;
         stroke: #fff;
-        stroke-width: 3;
-        stroke-dasharray: 970;
-        stroke-dashoffset: 970;
-        animation: draw 10s infinite linear;
-  }
-    .Logo-Bkg {
+        stroke-width: 2;
+        stroke-dasharray: 1970;
+        stroke-dashoffset: 1970;
         fill: url(#lgrad);
-        fill-opacity: 1;
-        path {
-            fill-opacity: 1;
-        }
+        fill-opacity: 0;
+        animation: DrawLine 8s, FadeStroke 1s;
     }
 }
 
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+@keyframes DrawLine {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes FadeStroke {
+  to { stroke-opacity: 0; }
+}
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
 }
