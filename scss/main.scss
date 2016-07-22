@@ -6,8 +6,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background: $primary-color;
-    font-family: $font-face
+    background: $background-color;
+    font-family: $font-face;
 }
 .pre-load {
     display: flex;
@@ -15,7 +15,7 @@ body {
     width: 100vw;
     align-items: center;
     align-content: center;
-    background: $primary-color;
+    background: $background-color;
     opacity: 1;
     z-index: 99;
     animation: Fade 1s ease 7s;
@@ -41,6 +41,9 @@ body {
     visibility: hidden;
     display: none;
 }
+
+@import "header";
+
 .content {
     width: 60%;
     height: 60%;

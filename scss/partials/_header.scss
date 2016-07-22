@@ -1,0 +1,29 @@
+header {
+    
+    .inner-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.s-angle {
+    background: #000;
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}  
+.s-angle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 100vw;
+    top: 0;
+    left: 100%;
+    border-left: 260px solid #000;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 100vh solid transparent;
+}
