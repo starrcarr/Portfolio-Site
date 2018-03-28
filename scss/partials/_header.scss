@@ -1,9 +1,54 @@
+@import "variables";
+
 header {
     
     .inner-wrapper {
-        width: 80%;
-        margin: 0 auto;
-        display: block;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 60px;
+        background: $background-color;
+        z-index: 999;
+        
+        .main-nav {
+            display: flex;
+            justify-content: flex-start;
+
+            .top-menu {
+                position: relative;
+                float: right;
+                align-items: center;
+                margin: auto;
+                padding: 0;
+                line-height: 1em;
+
+                li {
+                    display: inline;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    padding: 20px;
+                    cursor: pointer;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            float: left;
+            padding: 15px;
+            align-items: center;
+            margin: auto;
+            
+            i {
+                font-size: 50px;
+                color: #fff;
+            }
+        }
     }
 }
 .s-angle {
@@ -19,7 +64,7 @@ header {
     display: block;
     position: absolute;
     height: 0;
-    width: 100vw;
+    width: 0;
     top: 0;
     left: 100%;
     border-left: 260px solid #000;

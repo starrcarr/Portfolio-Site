@@ -17,7 +17,8 @@ body {
     align-content: center;
     background: $background-color;
     opacity: 1;
-    z-index: 99;
+    z-index: 9999;
+    position: absolute;
     animation: Fade 1s ease 7s;
     
     svg {
@@ -33,7 +34,7 @@ body {
             stroke-dashoffset: 1970;
             fill: url(#lgrad);
             fill-opacity: 0;
-            animation: DrawLine 6.5s ease 0s 1, FadeStroke 1s ease 5.5s, FillIn 1s ease 5.5s 1 normal forwards;
+            animation: DrawLine 6.5s ease 0s 1, FadeStroke .5s ease 5.5s, FillIn 1s ease 5s 1 normal forwards;
         }
     }
 }

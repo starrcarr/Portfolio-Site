@@ -5,11 +5,14 @@
             "sass.enabled": true,
             "sass.options": {
                 "outputDir": "../css/",
-                "includePaths": ["partials/"],
+                "includePaths": [
+                    "partials/"
+                ],
                 "imagePath": null,
                 "sourceComments": "none",
                 "outputStyle": "compressed"
-            }
+            },
+            "linting.collapsed": false
         }
     }
 }
