@@ -1,11 +1,11 @@
 @import "variables";
-@import "font-rules";
 
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 body {
+<<<<<<< HEAD
     background: $background-color;
     font-family: $font-face;
 }
@@ -53,12 +53,40 @@ body {
     margin: 0 auto;
     opacity: 0;
     animation: FadeInMove 1s ease 8s normal forwards;
+=======
+    background: $primary-color;
 }
-h1 {
-    color: coral;
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
+svg {
+    max-width: 95%;
+    max-height: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+    path {
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-dasharray: 1970;
+        stroke-dashoffset: 1970;
+        fill: url(#lgrad);
+        fill-opacity: 0;
+        animation: DrawLine 8s ease-in-out 0s 1, FadeStroke 1s ease 7s, FillIn 1s ease 7s 1 normal forwards;
+    }
 }
 
-@import "keyframes";
+@keyframes DrawLine {
+  to { stroke-dashoffset: 0; }
+>>>>>>> parent of a72f7c3... load screen
+}
+
+@keyframes FadeStroke {
+  to { stroke-opacity: 0; }
+}
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
