@@ -35,7 +35,7 @@ body {
             stroke-dashoffset: 1970;
             fill: url(#lgrad);
             fill-opacity: 0;
-            animation: DrawLine 6.5s ease 0s 1, FadeStroke .5s ease 5.5s, FillIn 1s ease 5s 1 normal forwards;
+            animation: DrawLine 6.5s ease 0s 1, FadeStroke .5s ease 6.5s, FillIn 1s ease 5s 1 normal forwards;
         }
     }
 }
